@@ -3,7 +3,7 @@ class Restaurant {
   String imagePath;
   String name;
   String description;
-  double starts;
+  double stars;
   int distance;
   List<String> categories;
 
@@ -12,7 +12,7 @@ class Restaurant {
     required this.imagePath,
     required this.name,
     required this.description,
-    required this.starts,
+    required this.stars,
     required this.distance,
     required this.categories,
   });
@@ -23,7 +23,7 @@ class Restaurant {
       'imagePath': imagePath,
       'name': name,
       'description': description,
-      'starts': starts,
+      'stars': stars,
       'distance': distance,
       'categories': categories,
     };
@@ -36,7 +36,7 @@ class Restaurant {
       imagePath: map['imagePath'],
       name: map['name'],
       description: map['description'],
-      starts: map['starts'],
+      stars: map['stars'],
       distance: map['distance'],
       categories: List<String>.from(map['categories']),
     );
@@ -44,6 +44,6 @@ class Restaurant {
 
   @override
   String toString() {
-    return 'Restaurant(id: $id, imagePath: $imagePath, name: $name, description: $description, starts: $starts, distance: $distance, categories: $categories)';
+    return 'Restaurant(id: $id, imagePath: $imagePath, name: $name, description: $description, stars: $stars, distance: $distance, categories: $categories)';
   }
 }

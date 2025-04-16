@@ -19,7 +19,7 @@ class RestaurantWidget extends StatelessWidget {
               style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16.0),
             ),
             Row(
-              children: List.generate(restaurant.starts.toInt(), (index) {
+              children: List.generate(restaurant.stars.toInt(), (index) {
                 return Image.asset('assets/others/star.png');
               }),
             ),

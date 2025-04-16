@@ -7,8 +7,11 @@ import 'package:provider/provider.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
+  print('Pré-carregando restaurantes...');
   RestaurantData restaurantData = RestaurantData();
   await restaurantData.getRestaurants();
+  print('Restaurantes carregados com sucesso!');
+
   runApp(
     MultiProvider(
       providers: [
