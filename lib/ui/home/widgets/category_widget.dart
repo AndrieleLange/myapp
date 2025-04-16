@@ -14,6 +14,22 @@ class CategoryWidget extends StatelessWidget {
         color: AppColors.cardBackground,
         borderRadius: BorderRadius.circular(12.0),
       ),
+      child: Column(
+        mainAxisSize: MainAxisSize.min,
+        mainAxisAlignment: MainAxisAlignment.center,
+        crossAxisAlignment: CrossAxisAlignment.center,
+        spacing: 8.0,
+        children: [
+          Image.asset(
+            "assets/categories/${category.toLowerCase()}.png",
+            height: 48,
+          ),
+          Text(
+            category,
+            style: TextStyle(fontSize: 16.0, fontWeight: FontWeight.w500),
+          ),
+        ],
+      ),
     );
   }
 }
