@@ -1,0 +1,2 @@
+/Users/andriele.lange/Desktop/myapp/android/app/.cxx/Debug/49353v4o/x86/CMakeFiles/edit_cache.dir
+/Users/andriele.lange/Desktop/myapp/android/app/.cxx/Debug/49353v4o/x86/CMakeFiles/rebuild_cache.dir
